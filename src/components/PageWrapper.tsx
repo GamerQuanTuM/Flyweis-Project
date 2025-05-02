@@ -1,4 +1,6 @@
 import React, { ReactNode } from "react";
+import Bg from "@/assets/bg.png"
+import Image from "next/image";
 
 const PageWrapper = ({
   children,
@@ -11,12 +13,12 @@ const PageWrapper = ({
     <div className="h-full w-full relative bg-[#eaeaeb]">
       {/* Fixed background image that stays in place */}
       <div className="absolute top-0 left-0 right-0 h-1/2 w-full">
-        <img
+        <Image
           className="h-full w-full object-center z-0"
-          src={`${
-            process.env.NEXT_PUBLIC_URL ?? "http://localhost:3000"
-          }/bg.png`}
+          src={Bg.src}
           alt="Background"
+          height={150}
+          width={150}
         />
       </div>
 

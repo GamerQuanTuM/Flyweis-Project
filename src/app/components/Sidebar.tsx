@@ -4,6 +4,7 @@ import { ChevronDown, ChevronUp, LucideIcon } from "lucide-react";
 import { sidebarContent } from "@/constants/sidebar-menu";
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "@/assets/logo.png";
 
 // Define TypeScript interfaces
 interface SubMenuItem {
@@ -91,9 +92,7 @@ const Sidebar: React.FC = () => {
       <div className="">
         {/* <h1 className="text-xl font-bold text-gray-800">Admin Dashboard</h1> */}
         <img
-          src={`${
-            process.env.NEXT_PUBLIC_URL ?? "http://localhost:3000"
-          }/logo.png`}
+          src={Logo.src}
           alt="Logo"
           height={150}
           width={150}

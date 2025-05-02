@@ -13,6 +13,7 @@ import ActivityLog from "@/assets/svg/activity-log.svg";
 import ChangePassword from "@/assets/svg/change-password.svg";
 import ManageAccount from "@/assets/svg/manage-account.svg";
 import Logout from "@/assets/svg/logout.svg";
+import UserLogo from "@/assets/user.png";
 
 import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -184,17 +185,11 @@ const User = () => {
   return (
     <div className="flex gap-3 items-center">
       <Avatar className="w-10 h-10">
-        <AvatarImage
-          src={`${
-            process.env.NEXT_PUBLIC_URL ?? "http://localhost:3000"
-          }/user.png`}
-        />
+        <AvatarImage height={50} width={50} src={UserLogo.src} />
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
       <div className="flex flex-col gap-1">
-        <h1 className="text-sm font-bold text-[#404040]">
-          Kalyani Kumar
-        </h1>
+        <h1 className="text-sm font-bold text-[#404040]">Kalyani Kumar</h1>
 
         <div className="flex justify-between items-center">
           <h3 className="text-xs font-normal text-[#565656]">Admin</h3>
