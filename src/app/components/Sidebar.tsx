@@ -90,7 +90,7 @@ const Sidebar: React.FC = () => {
     <div className="bg-white border-r border-gray-200 shadow-sm px-4 overflow-y-auto">
       <div className="">
         {/* <h1 className="text-xl font-bold text-gray-800">Admin Dashboard</h1> */}
-        <Image
+        <img
           src={`${
             process.env.NEXT_PUBLIC_URL ?? "http://localhost:3000"
           }/logo.png`}
